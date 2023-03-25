@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: #262A56;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.icon-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.icon-item{
+    display: block;
+    text-decoration: none;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    margin: 30px;
+    border-radius: 50%;
+}
+
+.icon-item i{
+    overflow: hidden;
+    line-height: 50px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    color: #ffffff;
+    box-shadow: rgba(153, 158, 163, 0.2) 0px 8px 24px;
+    font-size:20px;
+    z-index: 1;
+}
+
+.icon-item:nth-child(1) i:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -95px;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(90deg, white 50%,#2d86ff 50%);
+    transition: .4s ease-in-out;
+    z-index: -1;
+}
+
+.icon-item:nth-child(1):hover i::after{
+    right: 0px;
+}
+.icon-item:nth-child(2) i:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -95px;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(90deg, white 50%,#ff2d2d 50%);
+    transition: .4s ease-in-out;
+    z-index: -1;
+}
+
+.icon-item:nth-child(2):hover i::after{
+    right: 0px;
+}
+.icon-item:nth-child(3) i:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -95px;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    transition: .4s ease-in-out;
+    z-index: -1;
+}
+
+.icon-item:nth-child(3):hover i::after{
+    right: 0px;
+}
+.icon-item:nth-child(4) i:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -95px;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(90deg, white 50%,#20b144d8 50%);
+    transition: .4s ease-in-out;
+    z-index: -1;
+}
+
+.icon-item:nth-child(4):hover i::after{
+    right: 0px;
+}
